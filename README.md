@@ -5,8 +5,8 @@ matemática, geografia, entre outras.
 Objetivo desse projeto é criar uma plataforma interativa, para motivar as crianças a estudarem e aprender novos conteúdos.
 
 **Contato:**
-  - LinkedIn: [Selton Guedes][LinkedIn]
-  - Email: selton.g20@gmail.com
+  * LinkedIn: [Selton Guedes][LinkedIn]
+  * Email: selton.g20@gmail.com
 
 ## Ideação
 - [x] Relatório de Ideação
@@ -14,8 +14,8 @@ Objetivo desse projeto é criar uma plataforma interativa, para motivar as crian
 ## Layout e Protótipo
   - [x] **Layout**
     - [x] Home
-    - [ ] Login
-  - [x] **Protótico** *([visualizar][AdobeXD-ProtLink])*
+    - [ ] ~~Login~~
+  - [x] **Protótico** *([visualizar][AdobeXD-ProtLink])* - *Atualizado em 20 jul. 2020 às 14:42*
   
 ## Implementação
 
