@@ -2,7 +2,7 @@
   "name": "geniusplay",
   "version": "1.0.0",
   "description": "O GeniusPlay é uma plataforma de ensino para crianças. Onde elas possam aprender de uma forma divertida sobre ciência, tecnologia, \r matemática, geografia, entre outras. \r Objetivo desse projeto é criar uma plataforma interativa, para motivar as crianças a estudarem e aprender novos conteúdos.",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

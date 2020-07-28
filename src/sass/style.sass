@@ -1,2 +1,47 @@
+$color-primary: #7E39FB
+$color-secondary: #6200EE
+$color-third: #03DAC6
+$color-white: #fff
+
+$navbar-height: 100px
+
 body
     background-color: white
+    padding-top: $navbar-height
+    z-index: 0
+
+.navbar-light
+    background-color: $color-white
+    padding: 0 0 
+    height: $navbar-height
+    
+    .navbar-toggler
+        
+        .navbar-toggler-icon
+            
+    .img-logo
+        width: 200px
+    
+    .navbar-collapse.show
+        background-color: $color-white
+        margin: 0
+        text-align: left
+
+    .navbar-collapse
+        .navbar-nav
+            .nav-item .nav-link
+                font-weight: 400
+                color: $color-primary
+
+            .nav-item.active .nav-link
+                font-weight: 600
+                border-bottom: 2px solid $color-primary
+
+.jumbotron
+    background-color: $color-primary
+    border-radius: 0
+    padding: 40px 30px
+
+    .section-title
+        color: $color-white
+    

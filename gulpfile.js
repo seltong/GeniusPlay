@@ -1,11 +1,12 @@
 'use strict'
 
-const src = 'src',
-      distSrc = 'dist',
+const src = './src',
+      distSrc = './dist',
       fontsSrc = '/fonts',
       sassSrc = src + '/sass/**/*.sass',
       cssSrc = src + '/css/*.css',
-      htmlSrc = './*.html',
+      htmlSrc = ['./**/*.html', '!{dist,node_modules,src}/**'],
+      templateSrc = './template/*.html',
       jsSrc = src + '/js/*.js',
       imgSrc = src + '/img/*.{png,jpg,gif}',
       cssDest = src + '/css';
@@ -26,7 +27,8 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
     return gulp.src(sassSrc)
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-            .pipe(gulp.dest(cssDest));
+            .pipe(gulp.dest(cssDest))
+            .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function () { 
@@ -34,7 +36,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('browser-sync', function() {
-    var files = [htmlSrc, cssSrc, jsSrc, imgSrc];
+    var files = [htmlSrc, templateSrc, cssSrc, jsSrc, imgSrc];
 
     browserSync.init(files, {
         server: {
@@ -62,7 +64,7 @@ gulp.task('imagemin', function() {
                         progressive: true,
                         interlaced: true
                     })
-                ).pipe(gulp.dest(distSrc + '/img'));
+                ).pipe(gulp.dest(distSrc + '/src/img'));
 });
 
 gulp.task('usemin', function() {
