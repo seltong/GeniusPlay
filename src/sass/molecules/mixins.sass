@@ -1,0 +1,32 @@
+$color-primary: #7E39FB
+$color-secondary: #03DAC6
+$color-third: #6200EE
+
+$color-white: #fff
+$color-black: #000
+
+$navbar-height: 100px
+
+/* ======== Background Color Opacity */
+@mixin background-opacity($color: #000, $opacity: 0.85) 
+  background: $color
+  background: rgba($color, $opacity)
+
+@mixin border-radius($value)
+    border-top-left-radius: $value !important
+    border-top-right-radius: $value !important
+    border-bottom-left-radius: $value !important
+    border-bottom-right-radius: $value !important
+
+@function calculateRem($size) 
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+@mixin font-size($size) 
+  font-size: $size
+  font-size: calculateRem($size)
+
+@mixin opacity($opacity) 
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie)

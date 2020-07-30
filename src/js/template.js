@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#menu").load('./template/header.html');
+    $("#menu").load('./template/menu.html');
 });
 
 $(document).ready(function() {
