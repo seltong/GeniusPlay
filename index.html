@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./src/css/plugins.css">
     <link rel="stylesheet" href="./src/css/index.css">
     <!-- endbuild -->
 
@@ -49,13 +50,31 @@
                 <h1 class="section-title">What can I learn here?</h1>
             </div>
             <div class="col-12 section-content">
-                <div class="btn-group justify-content-center" role="btnCoursesGroup" aria-label="Courses Buttons Group">
-                    <div class="btn btn-course mr-3 justify-content-center">
+                <div role="btnCoursesGroup" aria-label="Courses Buttons Group"
+                    class="d-flex flex-column align-content-center flex-sm-row
+                           flex-wrap justify-content-center">
+                    <div class="btn btn-course btn-science mx-auto">
                         <div class="btn-icon">
                             <img src="" alt="" class="icon">
                         </div>
                         <div class="d-flex btn-coursename justify-content-center">
-                            <button>Science</button>
+                            <a>Science</a>
+                        </div>
+                    </div>
+                    <div class="btn btn-course btn-math mx-auto">
+                        <div class="btn-icon">
+                            <img src="" alt="" class="icon">
+                        </div>
+                        <div class="d-flex btn-coursename justify-content-center">
+                            <a>Math</a>
+                        </div>
+                    </div>
+                    <div class="btn btn-course btn-science btn-en mx-auto">
+                        <div class="btn-icon">
+                            <img src="" alt="" class="icon">
+                        </div>
+                        <div class="d-flex btn-coursename justify-content-center">
+                            <a>English</a>
                         </div>
                     </div>
                 </div>

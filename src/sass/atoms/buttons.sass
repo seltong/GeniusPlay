@@ -1,31 +1,39 @@
 
-$btn-course-width: 120px
 
 .btn-primary,
 .btn-secondary
     padding: 10px
-    font-weight: 600
+    font-weight: $font-semiBold
 
 .btn-primary
-    background-color: $color-primary
+    background-color: $purple-500
     color: $color-white
 
 .btn-secondary
-    background-color: $color-secondary
-    border: 1px solid $color-third
+    background-color: $green-200
+    border: 1px solid $purple-500
     color: $color-black
 
-
 .btn-course
-    @include border-radius(15px)
-
-    background-color: gray
-    border: 1px solid $color-black
-    height: $btn-course-width
-    padding: 10px
-    width: $btn-course-width
+    text_green_light-Emphasis-black($opacity-high)
+    font-weight: $font-semiBold
+    border: 2px solid #000
 
     .btn-icon
         margin: 0 auto
-        width: 60px
-        height: 60px
+        height: 100px
+
+.btn-science
+    @include btn-course($green-200)
+    color: $green-900
+    border: 2px solid $green-900
+
+.btn-math
+    @include btn-course($math-bg)
+    color: $math-font
+    border: 2px solid $math-font
+
+.btn-en
+    @include btn-course($en-bg)
+    color: $en-font
+    border: 2px solid $en-font

@@ -1,22 +1,98 @@
-$color-primary: #7E39FB
-$color-secondary: #03DAC6
-$color-third: #6200EE
+
+/* ----- Courses Colors ------ */
+
+/*
+  $color-primary: #7E39FB
+  $color-secondary: #03DAC6
+  $color-third: #6200EE
+
+$en-bg: #F8AC00
+$en-font: #9A600A
+$math-bg: #BA89FF
+$math-font: #5722A2
+
+/* ----- Purple Colors ------ */
+
+$purple-500: #6200EE
+$purple-50: #FBD5FF
+$purple-900: #0000C9
+
+$purple-800: #2500D7
+$purple-700: #3F00DF
+$purple-600: #5400E8
+$purple-400: #7E39FB
+$purple-300: #995DFF
+$purple-200: #BAB9FF
+$purple-100: #DAB2FF
+
+/* ----- Grueen Colors ------ */
+
+$green-200: #03DAC6
+$green-900: #005737
+$green-50: #A8FFFB
+
+$green-800: #007457
+$green-700: #008466
+$green-600: #009577
+$green-500: #00A284
+$green-400: #00B398
+$green-300: #00C4AB
+$green-100: #71EFE0
+
+/* ----- Other Colors ------ */
 
 $color-white: #fff
 $color-black: #000
 
-$navbar-height: 100px
+/* ------ Fonts ------ */
 
-/* ======== Background Color Opacity */
+$font-xlight: 200
+$font-light: 300
+$font-regular: 500
+$font-semiBold: 600 
+$font-bold: 700
+$font-xBold: 800
+$font-black: 900
+
+/* ------ Opacity ------ */
+
+$opacity-p-hg: 1
+$opacity-p-md: 0.74
+$opacity-hg: 0.87
+$opacity-md: 0.60
+$opacity-d: 0.38
+
+/* ------ Constants ------ */
+
+$navbar-height: 100px
+$btn-course-width: 160px
+
+/* ------ Background Color Opacity ------ */
+
 @mixin background-opacity($color: #000, $opacity: 0.85) 
   background: $color
   background: rgba($color, $opacity)
+
+/* ------ Border ------ */
 
 @mixin border-radius($value)
     border-top-left-radius: $value !important
     border-top-right-radius: $value !important
     border-bottom-left-radius: $value !important
     border-bottom-right-radius: $value !important
+
+/* ------ Buttons ------ */
+
+@mixin btn-course($color)
+  @include border-radius(15px)
+  
+  background-color: $color
+  border: 1px solid $color-black
+  height: $btn-course-width
+  padding: 10px
+  width: $btn-course-width
+
+/* ------ Font ------ */
 
 @function calculateRem($size) 
   $remSize: $size / 16px
@@ -26,7 +102,35 @@ $navbar-height: 100px
   font-size: $size
   font-size: calculateRem($size)
 
+/* ------ Others ------ */
+
 @mixin opacity($opacity) 
   opacity: $opacity
   $opacity-ie: $opacity * 100
   filter: alpha(opacity=$opacity-ie)
+
+/* ----- Text On Purple ------ */
+
+/* Emphasis:
+  - High: 87% (Non primary) | 100% (Primary), use 0.87 or 1
+  - Medium: 60% (Non primary) | 74% (Primary), use 0.60 or 0.74
+  - Disabled: 38%, use 0.38
+
+@mixin text_purple_primary-Emphasis-black($opacity)
+  color: rgba(0, 0, 0, $opacity)
+
+@mixin text_purple-Emphasis-white($opacity)
+  color: rgba(255, 255, 255, $opacity)
+
+/* ----- Text On Green ------ */
+
+/* Emphasis:
+  - High: 87%, use 0.87
+  - Medium: 60%, use 0.60
+  - Disabled: 38%, use 0.38
+
+@mixin text_green_light-Emphasis-black($opacity)
+  color: rgba(0, 0, 0, $opacity)
+
+@mixin text_green_dark-Emphasis-white($opacity)
+  color: rgba(255, 255, 255, $opacity)
