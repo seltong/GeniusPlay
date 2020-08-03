@@ -34,15 +34,31 @@ Objetivo desse projeto é criar uma plataforma interativa, para motivar as crian
   
 ## Implementação
   - **Sprint 1:**
-    - [ ] Template
-    - [ ] Home
+    - [x] Template
+    - [x] Home
     - [ ] AllCourses
-    - [ ] Ranking
-    - [ ] Support
+    - [x] Support
     
   - **Sprint 2:**
-    - Next Step
-
+    - [ ] SignUp
+    - [ ] CourseContent
+    - [ ] Ranking
+    - [ ] CoursesLevels
+    
+  - **Sprint 3:**
+    - [ ] Profile
+    - [ ] AdminProfile
+    - [ ] ManageAccount
+    - [ ] CourseTest
+    
+  - **Sprint 4:**
+    - [ ] AddContent
+    - [ ] Sign In
+    - [ ] AddTest
+    
+  - **Sprint 5:**
+    - [ ] Add content to the platform.
+      
 
 [LinkedIn]: https://www.linkedin.com/in/selton-guedes-57b628171/
 [AdobeXD-ProtLink]: https://xd.adobe.com/view/ab1b1a97-4f96-47a9-b9d7-cf6cf7b25dad-fe48/
